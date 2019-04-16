@@ -20,7 +20,6 @@ public class ProductController {
 		ModelAndView mv = new ModelAndView("list");
 		List<Product> list = proService.searchAll();
 		mv.addObject("list", list);
-		System.out.println("zzzzzzzzzzzzzzzz");
 		return mv;
 	}
 
