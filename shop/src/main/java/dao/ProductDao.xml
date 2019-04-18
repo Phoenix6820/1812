@@ -34,13 +34,13 @@
 
 	<resultMap type="entity.Product" id="ProAndPicLazy">
 		<id property="id" column="id" />
-		<result property="name" column="name" />
+		<result property="name" column="name" /> 
 		<result property="price" column="price" />
 		<result property="no" column="no" />
 		<result property="saleNum" column="saleNum" />
 		<result property="stock" column="stock" />
 		<result property="content" column="content" />
-		<collection property="pics" column="id"
+		<collection property="pics" column="    "
 			select="dao.PictureDao.selectByPro">
 
 		</collection>
